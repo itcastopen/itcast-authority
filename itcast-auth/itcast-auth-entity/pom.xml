@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>itcast-auth</artifactId>
+        <groupId>com.itheima</groupId>
+        <version>1.0.0</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>itcast-auth-entity</artifactId>
+    <name>${project.artifactId}</name>
+    <description>传智权限管家-权限服务实体模块</description>
+    <dependencies>
+        <dependency>
+            <groupId>com.itheima</groupId>
+            <artifactId>itcast-tools-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.itheima</groupId>
+            <artifactId>itcast-tools-log</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.itheima</groupId>
+            <artifactId>itcast-tools-jwt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus</artifactId>
+        </dependency>
+
+        <!--Lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Role 中字段的类型需要使用 DataScopeType -->
+        <dependency>
+            <groupId>com.itheima</groupId>
+            <artifactId>itcast-tools-databases</artifactId>
+            <optional>true</optional>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-release</id>
+            <name>Nexus release Repository</name>
+            <url>http://repo.itheima.net/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Nexus snapshots Repository</name>
+            <url>http://repo.itheima.net/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>

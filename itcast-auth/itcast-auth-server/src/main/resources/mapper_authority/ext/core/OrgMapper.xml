@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.authority.biz.dao.core.OrgMapper">
+    <!--<cache-ref namespace="com.itheima.authority.biz.dao.core.OrgMapper"/>-->
+
+    <select id="pageLike" resultType="com.itheima.authority.entity.core.Org">
+        SELECT
+        <include refid="Base_Column_List"/>
+        ,(st_distance(point(cast(latitude as decimal(10,6)),cast(longitude as
+        decimal(10,6))),point(cast(#{params.latitude}
+        as decimal(10,6)),cast(#{params.longitude} as decimal(10,6))))*111195/1000 ) as jl
+        FROM itcast_core_org
+        <where>
+            1 = 1
+            <if test="params.cityId != null">
+                AND city_id = #{params.cityId}
+            </if>
+            <if test="params.keyword != null">
+                AND (address LIKE concat('%',#{params.keyword},'%')
+                or name LIKE concat('%',#{params.keyword},'%')
+                or abbreviation LIKE concat('%',#{params.keyword},'%')
+                or contract_number LIKE concat('%',#{params.keyword},'%') )
+            </if>
+        </where>
+        order by jl asc
+    </select>
+</mapper>

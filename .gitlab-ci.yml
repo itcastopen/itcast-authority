@@ -1,0 +1,28 @@
+stages:
+    - build
+    - run
+server-package:
+    stage: build
+    script:
+        - source /etc/profile
+        - mvn clean install -Ptest -DskipTests -U
+        - docker build -t itcast-authority/gateway --build-arg PACKAGE_PATH=itcast-gateway/target/*.jar --build-arg EXPOSE_PORT=8761 .
+        - docker build -t itcast-authority/auth-server --build-arg PACKAGE_PATH=itcast-auth/itcast-auth-server/target/*.jar --build-arg EXPOSE_PORT=8766 .
+    only:
+        - platform
+    tags:
+        - auth-runner
+server-runner:
+    stage: run
+    script:
+        - pwd
+        # 首次执行需要注释掉否则会报错
+        - docker rm -f $(docker ps -a |  grep "itcast-authority*"  | awk '{print $1}')
+        - docker run -d -p 8761:8760 --name itcast-authority-gateway itcast-authority/gateway
+        - docker run -d -p 8766:8764 --name itcast-authority-auth-server itcast-authority/auth-server
+        # 首次执行需要注释掉否则会报错
+        - docker images | grep none | awk '{print $3}' | xargs docker rmi
+    only:
+        - platform
+    tags:
+        - auth-runner
