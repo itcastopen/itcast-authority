@@ -89,9 +89,7 @@ itcast-authority
   https://redis.io/download
 - Nacos： 1.1.4
   https://github.com/alibaba/nacos/releases
-- Node： 11.3+（集成npm）
-  https://nodejs.org/en/download
-
+  
 安装运行步骤
 =========================
 
@@ -99,33 +97,17 @@ itcast-authority
 
 页面一览
 =========================
-
-<img src="docs/img/0.png" width="400" height="250"/>
-<img src="docs/img/1.png" width="400" height="250"/>
-<br><br>
-
-<img src="docs/img/2.png" width="400" height="250"/>
-<img src="docs/img/3.png" width="400" height="250"/>
-<br><br>
-
-<img src="docs/img/4.png" width="400" height="250"/>
-<img src="docs/img/5.png" width="400" height="250"/>
-<br><br>
-
-<img src="docs/img/6.png" width="400" height="250"/>
-<img src="docs/img/7.png" width="400" height="250"/>
-<br><br>
-
-<img src="docs/img/8.png" width="400" height="250"/>
-<img src="docs/img/9.png" width="400" height="250"/>
-<br><br>
+![](docs/img/页面/菜单.png)
+![](docs/img/页面/权限配置.png)
+![](docs/img/页面/应用配置.png)
+![](docs/img/页面/应用-流程.png)
+![](docs/img/页面/应用-品优购.png)
 
 新的惊喜
 =========================
 想进步、要关注。关注老铁抖音号，成为'铁丝' ：）
 
 <img src="docs/img/douyin.jpeg" width="300"  alt="抖音号" />
-
 <br><br>
 
 更多福利
