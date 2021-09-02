@@ -1,7 +1,7 @@
 ![](http://www.itcast.cn/2018czgw/images/logo.png)
 ![](http://www.itcast.cn/2020gw/images/slogan2.jpg)
 
-itcast-authority 权限管家- [官方主页](https://pip.itcast.cn/java-qxgj)
+传智权限管家
 =========================
 
 - [后端Gitee地址](https://gitee.com/itcastopen/itcast-authority.git)
@@ -12,6 +12,7 @@ itcast-authority 权限管家- [官方主页](https://pip.itcast.cn/java-qxgj)
 
 **在线演示**
 =========================
+- [官方主页](https://pip.itcast.cn/java-qxgj)
 - [演示地址](http://www-permission-admin.itheima.net)
 
 **项目背景**
