@@ -170,7 +170,7 @@ public class AuthManager {
             return R.fail(R.FAIL_CODE, "用户没有当前应用的权限");
         }
 
-        // 缓存token 缓存时间要超过token 失效时间
+        // 查找用户的资源权限编码
         List<Resource> resourceList = this.resourceService.findVisibleResource(ResourceQueryDTO.builder().userId(user.getId()).build());
         log.info("resourceList {} {}", resourceList.size(), resourceList);
         List<String> permissionsList = resourceList.stream().filter(item -> item != null).map(Resource::getCode).collect(Collectors.toList());

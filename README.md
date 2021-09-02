@@ -6,8 +6,8 @@ itcast-authority 权限管家- [官方主页](https://pip.itcast.cn/java-qxgj)
 
 - [后端Gitee地址](https://gitee.com/itcastopen/itcast-authority.git)
 - [后端Github地址](https://github.com/itcastopen/itcast-authority.git)
-- [前端Gitee地址](https://gitee.com/itcastopen/itcast-authority-vue.git)
-- [前端Github地址](https://github.com/itcastopen/itcast-authority-vue.git)
+- [前端Gitee地址](https://gitee.com/itcastopen/itcast-authority-web.git)
+- [前端Github地址](https://github.com/itcastopen/itcast-authority-web.git)
 
 
 **在线演示**
