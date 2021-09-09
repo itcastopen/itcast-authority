@@ -110,6 +110,10 @@ itcast-authority
 
 <img src="docs/img/douyin.jpeg" width="300"  alt="抖音号" />
 <br><br>
+加微信、加入Java开源技术交流群
+<br>
+<img src="docs/img/weixin.jpeg" width="300"  alt="微信交流群" />
+<br><br>
 
 更多福利
 =========================

@@ -27,7 +27,7 @@ import java.net.UnknownHostException;
 @EnableAuthServer
 @Configuration
 @EnableFeignClients(value = {
-        "com.itheima.itcast",
+        "com.itheima",
 })
 @Slf4j
 @EnableAspectJAutoProxy(proxyTargetClass = true, exposeProxy = true)
