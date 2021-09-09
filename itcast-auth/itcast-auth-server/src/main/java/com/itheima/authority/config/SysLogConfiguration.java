@@ -9,12 +9,12 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 /**
  * 日志自动配置
- *
  */
 @EnableAsync
 @Configuration
 public class SysLogConfiguration {
 
+    // 日志存储的数据库
     @Value("${itcast.mysql.database:itcast_auth}")
     private String database;
 

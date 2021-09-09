@@ -15,10 +15,6 @@ public class PreTenantHandler implements TenantHandler {
 
     private static final String SYSTEM_APPLICATION_ID = "application_id";
 
-    public PreTenantHandler() {
-        log.info("PreTenantHandler init");
-    }
-
     /**
      * 不需要需要过滤的表
      */
